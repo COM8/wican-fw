@@ -543,6 +543,32 @@
 
         <div id="wifi_settings" class="tabcontent">
             <form id="configForm" name="configForm" action="/action_page" onchange="submit_enable();">
+                <div class="section-title">General</div>
+                <table class="form-table">
+                    <tr>
+                        <td>Status LED:</td>
+                        <td>
+                            <select name="status_led" id="status_led">
+                                <option value="booted">Booted</option>
+                                <option value="active">Active</option>
+                                <option value="sleeping">Sleeping</option>
+                                <option value="ble_status">BLE Status</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Button Action:</td>
+                        <td>
+                            <select name="button_action" id="button_action">
+                                <option value="reboot">Reboot</option>
+                                <option value="ble">Toggle BLE</option>
+                                <option value="nothing">Nothing</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
                 <div class="section-title">AP Config</div>
                 <table class="form-table">
                     <tr>
