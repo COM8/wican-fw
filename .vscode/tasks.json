@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "⬆️ Upload New Firmware",
+            "type": "shell",
+            "command": "bash ${workspaceFolder}/scripts/upload_latest_fw_rest.sh",
+            "detail": "Uploads the latest build firmware binary via the REST interface to the device.",
+        }
+    ]
+}

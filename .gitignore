@@ -62,7 +62,8 @@ docs/node_modules
 
 #managed components
 managed_components/
-.vscode/
+.vscode/*
+!.vscode/tasks.json
 
 # Clangd Cache
 .cache/
